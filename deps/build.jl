@@ -37,7 +37,7 @@ if haskey(ENV, "MXNET_HOME")
     @info("Existing libmxnet detected at $lib, skip building...")
     libmxnet_detected = true
   else
-    @error("Failed to load existing libmxnet, trying to build from source...")
+    error("Failed to load existing libmxnet")
   end
 end
 
